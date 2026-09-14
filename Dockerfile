@@ -25,6 +25,8 @@ COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/next.config.js ./next.config.js
 
+USER node
+
 EXPOSE 3000
 
 CMD ["npm", "start"]
