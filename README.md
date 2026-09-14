@@ -1,5 +1,7 @@
 # Hozn - Real Estate 🏡🚀
 
+Forked from https://github.com/AHMAD-JX/Hozn-RealEstate-Fullstack
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/AHMAD-JX/Hozn-RealEstate-Fullstack?style=for-the-badge)
 ![GitHub stars](https://img.shields.io/github/stars/AHMAD-JX/Hozn-RealEstate-Fullstack?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/AHMAD-JX/Hozn-RealEstate-Fullstack?style=for-the-badge)
@@ -193,7 +195,38 @@ curl -X POST "http://localhost:5000/api/properties" \
      -d '{"title":"Luxury Villa", "price":250000, "location":"Cairo", "description":"Spacious 3-bedroom villa"}'
 
 ```
+## 🐳 Run the Application with Docker Compose
 
+### Prerequisites
+
+- Docker
+- Docker Compose
+
+### Start the Application
+
+From the project root directory, run:
+
+```bash
+docker compose up --build
+```
+
+To run the containers in the background:
+
+```bash
+docker compose up --build -d
+```
+
+### Check Running Containers
+
+```bash
+docker compose ps
+```
+
+### Stop the Application
+
+```bash
+docker compose down
+```
 
 ## 📡 API Endpoints
 
